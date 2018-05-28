@@ -13,7 +13,7 @@ class Toggle extends Component {
     return (
       <div>
         <h3>Toggle component</h3>
-        <button id="myButton" onClick={this.toggleDiv}>
+        <button className="button" onClick={this.toggleDiv}>
           Toggle my div
         </button>
         <div
