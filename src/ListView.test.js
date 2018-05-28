@@ -13,6 +13,19 @@ describe('ListView', () => {
         list: ['New York', 'London', 'Antwerp'],
       },
     });
+    const wrapper = shallow(
+      <ConnectedListView store={store} title="React test workshop" />,
+    );
+    expect(wrapper.dive().find('.item').length).toEqual(3);
+  });
+
+  // What if we have multiple HOCs?
+  it('should have 3 items', () => {
+    const store = mockStore({
+      city: {
+        list: ['New York', 'London', 'Antwerp'],
+      },
+    });
     const wrapper = shallowUntilTarget(
       <ConnectedListView store={store} title="React test workshop" />,
       ListView,
