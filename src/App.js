@@ -1,7 +1,9 @@
 import React, { Component } from 'react';
+import ComplexComponent from './ComplexComponent';
 import Header from './Header';
 import ListView from './ListView';
-import ComplexComponent from './ComplexComponent';
+import Toggle from './Toggle';
+import logo from './logo.svg';
 import './App.css';
 
 class App extends Component {
@@ -12,8 +14,10 @@ class App extends Component {
         <p className="App-intro">
           To get started, edit <code>src/App.js</code> and save to reload.
         </p>
+        <Toggle />
+        <hr style={{ marginBottom: 60 }} />
         <ListView />
-        <hr />
+        <hr style={{ marginBottom: 60 }} />
         <ComplexComponent />
       </div>
     );

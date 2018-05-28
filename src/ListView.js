@@ -5,7 +5,7 @@ import './App.css';
 
 export const ListView = props => (
   <div>
-    <h3>This is the ListView component</h3>
+    <h3>ListView component</h3>
     <ul>
       {props.items.map(item => (
         <li key={item} className="item">

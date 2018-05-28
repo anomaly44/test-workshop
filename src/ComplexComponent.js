@@ -21,6 +21,7 @@ export class ComplexComponent extends Component {
     const items = ['one', 'two', 'three'];
     return (
       <div>
+        <h3>Select component</h3>
         <form className="form" onSubmit={this.handleSubmit}>
           <select
             className="select"
