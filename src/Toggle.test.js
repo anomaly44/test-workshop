@@ -9,12 +9,14 @@ describe('Toggle', () => {
   });
 
   it('changes the toggle state when toggleDiv is called', () => {
+    // simple test (only test method and state)
     const wrapper = shallow(<Toggle />);
     wrapper.instance().toggleDiv();
     expect(wrapper.instance().state.toggleOn).toBe(true);
   });
 
   it('changes the toggle state when the button is clicked', () => {
+    // deeper test (also tests button)
     const wrapper = shallow(<Toggle />);
     wrapper.find('.button').simulate('click');
     // without instance we can call the state() function
