@@ -39,9 +39,7 @@ describe('ComplexComponent', () => {
   it('should dispatch our action with the selectedItem', () => {
     const store = mockStore();
 
-    const wrapper = shallow(
-      <ConnectedComplexComponent store={store} title="React test workshop" />,
-    );
+    const wrapper = shallow(<ConnectedComplexComponent store={store} />);
 
     const childWrapper = wrapper.dive();
     childWrapper.instance().setState({
