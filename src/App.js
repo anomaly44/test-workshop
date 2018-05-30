@@ -13,10 +13,10 @@ class App extends Component {
         <Header title="React test workshop" />
         <hr style={{ marginBottom: 60 }} />
 
-        <Toggle />
+        <ListView />
         <hr style={{ marginBottom: 60 }} />
 
-        <ListView />
+        <Toggle />
         <hr style={{ marginBottom: 60 }} />
 
         <ComplexComponent />
