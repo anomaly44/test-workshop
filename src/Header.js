@@ -4,6 +4,7 @@ import './App.css';
 
 const Header = props => (
   <div>
+    <h3>Header Component</h3>
     <img src={logo} className="App-logo" alt="logo" />
     <div className="title">{props.title}</div>
   </div>
