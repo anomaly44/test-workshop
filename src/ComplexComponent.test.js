@@ -12,7 +12,7 @@ describe('ComplexComponent', () => {
   it('should select an item', () => {
     const store = mockStore();
     const wrapper = shallowUntilTarget(
-      <ConnectedComplexComponent store={store} title="React test workshop" />,
+      <ConnectedComplexComponent store={store} />,
       ComplexComponent,
     );
 
@@ -26,9 +26,7 @@ describe('ComplexComponent', () => {
     const store = mockStore();
 
     const submitMock = jest.fn();
-    const wrapper = shallow(
-      <ComplexComponent submit={submitMock} title="React test workshop" />,
-    );
+    const wrapper = shallow(<ComplexComponent submit={submitMock} />);
 
     wrapper.instance().setState({
       selectedItem: 'three',
